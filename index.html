@@ -172,7 +172,7 @@ footer a{color:var(--magenta);font-weight:600}
     <div class="kicker">TecTonic Night Summit</div>
     <h1>Who&rsquo;s<br>where</h1>
     <p class="meta">
-      <b>Indoor hall</b>: 24 stands &middot; <b>Creators Courtyard</b>: 14 Scottish businesses<br>
+      <b>Indoor hall</b>: 24 stands &middot; <b>Creators Courtyard</b>: 15 Scottish businesses<br>
       Barras Art &amp; Design, Glasgow &middot; Thu 10 Sep 2026
     </p>
   </div>
@@ -180,7 +180,7 @@ footer a{color:var(--magenta);font-weight:600}
 <div class="stick">
   <div class="areas" id="areas">
     <button class="area" data-area="indoor" aria-pressed="true">Indoor hall<small>24 stands</small></button>
-    <button class="area" data-area="yard" aria-pressed="false">Creators Courtyard<small>14 businesses, outside</small></button>
+    <button class="area" data-area="yard" aria-pressed="false">Creators Courtyard<small>15 businesses, outside</small></button>
   </div>
   <nav class="tabs" role="tablist" aria-label="Views">
     <button class="tab" id="tab-list" role="tab" aria-selected="true" aria-controls="view-list">Who&rsquo;s here</button>
@@ -215,7 +215,7 @@ footer a{color:var(--magenta);font-weight:600}
 <footer>
   <div class="f-in">
     <h3>Thank you for shopping small and thinking big.</h3>
-    <p>Indoors you&rsquo;ll find the tech ecosystem &mdash; founders, studios, programmes and the people who back them. Out in the courtyard, fourteen independent Scottish makers and producers. The night ends, but they keep going &mdash; follow them, order from them, tell someone else about them.</p>
+    <p>Indoors you&rsquo;ll find the tech ecosystem &mdash; founders, studios, programmes and the people who back them. Out in the courtyard, fifteen independent Scottish makers and producers. The night ends, but they keep going &mdash; follow them, order from them, tell someone else about them.</p>
     <ul class="tips">
       <li><b>Something to take home:</b> free headshots at SocialPaps (spot 13), caricatures at spot 10, and face painting by the stage.</li>
       <li><b>Mentor Zone</b> is on the left as you come in, next to the bar. The mezzanine and mood bar are on the first floor.</li>
@@ -352,10 +352,10 @@ var YARD = [
   one:"Family-run, female-led Scotch whisky and gin",
   full:"Independent, family-run and female-led distillery on a South Lanarkshire farm, producing Scotch whisky and gin with provenance at its heart.",
   web:"raer.co.uk", url:"https://raer.co.uk/"},
- {n:4, run:2, name:"Diamond Product Design Co.", tag:"Product design R&D",
-  one:"MedTech, VetTech and AgriTech products, concept to prototype",
-  full:"Award-winning R&D studio specialising in MedTech, VetTech and AgriTech product development. Working across research and the private sector, they take products from concept through to investor-ready prototypes, using on-site manufacturing kit to move fast and give clients back control of IP, lead times and quality.",
-  web:"diamondproductdesign.co.uk", url:"https://www.diamondproductdesign.co.uk/"},
+ {n:4, run:2, name:"Wee Knob of Butter", tag:"Food",
+  one:"Premium flavoured Scottish butter",
+  full:"Scottish artisan food business churning premium flavoured butter from fresh, locally sourced ingredients. A cult favourite with Scottish chefs.",
+  web:"", url:""},
  {n:5, run:2, name:"Selkie Seaweed", tag:"Food",
   one:"Regeneratively grown west coast seaweed",
   full:"Scottish family business growing native seaweed regeneratively on the west coast and turning it into premium foods from Scotland's natural larder.",
@@ -376,10 +376,14 @@ var YARD = [
   one:"Skincare ingredients from spent coffee grounds",
   full:"Glasgow circular-economy business turning spent coffee grounds into upcycled skincare ingredients, giving valuable materials a second life.",
   web:"revivedskincare.co.uk", url:"https://revivedskincare.co.uk"},
- {n:10, run:3, name:"Plistic Media", tag:"Creative platform",
+ {n:10, run:3, label:"10a", name:"Plistic Media", tag:"Creative platform",
   one:"A directory for Scotland's creative industries",
   full:"A searchable directory pulling Scotland's creative and media industries together, making talent easier to find and collaboration easier to start.",
   web:"plisticmedia.com", url:"https://plisticmedia.com/"},
+ {n:15, run:3, label:"10b", name:"Diamond Product Design Co.", tag:"Product design R&D",
+  one:"MedTech, VetTech and AgriTech products, concept to prototype",
+  full:"Award-winning R&D studio specialising in MedTech, VetTech and AgriTech product development. Working across research and the private sector, they take products from concept through to investor-ready prototypes, using on-site manufacturing kit to move fast and give clients back control of IP, lead times and quality. Sharing table 10 with Plistic Media.",
+  web:"diamondproductdesign.co.uk", url:"https://www.diamondproductdesign.co.uk/"},
  {n:11, run:3, name:"Rooted in Mexico", tag:"Folk art",
   one:"Mexican folk art, made with the artisans behind it",
   full:"Women-led business bringing authentic Mexican folk art to the UK, working directly with artisans and celebrating the makers, places and traditional techniques behind every piece.",
@@ -414,13 +418,13 @@ var AREAS = {
   },
   yard:{
     items:YARD,
-    runs:[{id:0,label:"All 14"},{id:1,label:"Larder & Bar"},{id:2,label:"Coast & Wellbeing"},{id:3,label:"Craft & Care"},{id:4,label:"Made by Hand"}],
-    countAll:"All 14 businesses, table order", noun:"business", nouns:"businesses",
+    runs:[{id:0,label:"All 15"},{id:1,label:"Larder & Bar"},{id:2,label:"Coast & Wellbeing"},{id:3,label:"Craft & Care"},{id:4,label:"Made by Hand"}],
+    countAll:"All 15 businesses, table order", noun:"business", nouns:"businesses",
     intro:"Tap any table to see who\u2019s on it. You come in at the top left, and the bar sits at the head of the yard.",
     legendTitle:"The four runs",
     legend:[["1\u20133","The Larder & Bar \u2014 left row, as you come in"],
             ["4\u20137","Coast & Wellbeing \u2014 centre, bar side"],
-            ["8\u201311","Craft & Care \u2014 centre, far side"],
+            ["8\u201311","Craft & Care \u2014 centre, far side. Table 10 is shared: 10a Plistic Media, 10b Diamond Product Design"],
             ["12\u201314","Made by Hand \u2014 right row"]],
     key:[["tb","Trading table — tap it"],["dk","Bar"]],
     plan:buildYardPlan
@@ -452,7 +456,7 @@ function cardHTML(b){
   else if(b.licensed) tags += '<span class="tag lic">ID</span>';
   if(b.tbc) tags += '<span class="tag tbc">To be confirmed</span>';
   var badge = b.nospot ? '<span class="badge sm"><span>Ask</span></span>'
-            : b.n ? '<span class="badge"><span>'+b.n+'</span></span>'
+            : b.n ? '<span class="badge'+(b.label?' sm':'')+'"><span>'+(b.label||b.n)+'</span></span>'
                   : '<span class="badge sm"><span>'+esc(b.name)+'</span></span>';
   return '<li class="card" id="biz-'+id+'">'+
     '<button class="card-btn" aria-expanded="false" aria-controls="d-'+id+'">'+
@@ -593,7 +597,8 @@ function buildYardPlan(){
     {n:7,  x:278, y:ys[2], w:V[0],  h:V[1]},
     {n:8,  x:386, y:ys[0], w:V[0],  h:V[1]},
     {n:9,  x:386, y:ys[1], w:V[0],  h:V[1]},
-    {n:10, x:386, y:ys[2], w:V[0],  h:V[1]},
+    {n:10, x:386, y:ys[2], w:V[0],  h:V[1]/2-3, label:"10a"},
+    {n:15, x:386, y:ys[2]+V[1]/2+3, w:V[0], h:V[1]/2-3, label:"10b"},
     {n:11, x:302, y:688,   w:Hz[0], h:Hz[1]},
     {n:12, x:604, y:ys[0], w:V[0],  h:V[1]},
     {n:13, x:604, y:ys[1], w:V[0],  h:V[1]},
@@ -602,18 +607,18 @@ function buildYardPlan(){
   var s = '<rect x="24" y="100" width="712" height="670" rx="14" fill="none" stroke="#e2e2e8" stroke-width="3"/>';
   T.forEach(function(t){
     var b = findItem(t.n); if(!b) return;
-    var fs = t.h > 100 ? 52 : 40;
+    var fs = t.label ? 30 : (t.h > 100 ? 52 : 40), lab = t.label || t.n;
     s += '<g class="t" role="button" tabindex="0" data-n="'+t.n+'">'+
-           '<title>Table '+t.n+' \u2014 '+esc(b.name)+'</title>'+
+           '<title>Table '+lab+' \u2014 '+esc(b.name)+'</title>'+
            '<rect x="'+t.x+'" y="'+t.y+'" width="'+t.w+'" height="'+t.h+'" rx="6"/>'+
-           '<text x="'+(t.x+t.w/2)+'" y="'+(t.y+t.h/2+fs*0.35)+'" text-anchor="middle" font-size="'+fs+'">'+t.n+'</text>'+
+           '<text x="'+(t.x+t.w/2)+'" y="'+(t.y+t.h/2+fs*0.35)+'" text-anchor="middle" font-size="'+fs+'">'+lab+'</text>'+
          '</g>';
   });
   s += '<rect x="290" y="44" width="180" height="54" rx="6" fill="#242426"/>'+
        '<text x="380" y="79" text-anchor="middle" font-size="25" font-weight="700" fill="#fff" letter-spacing="1.6">BAR</text>';
   s += '<text x="108" y="34" text-anchor="middle" font-size="22" font-weight="700" fill="#242426" letter-spacing="1.4">ENTRANCE</text>'+
        '<path d="M 108 52 L 108 92 M 91 75 L 108 92 L 125 75" stroke="#E96FD2" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>';
-  return '<svg class="plan" viewBox="0 0 760 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Courtyard table plan, tables 1 to 14, entrance top left, bar at the head of the yard">'+s+'</svg>';
+  return '<svg class="plan" viewBox="0 0 760 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Courtyard table plan, tables 1 to 14 with table 10 split in two, entrance top left, bar at the head of the yard">'+s+'</svg>';
 }
 
 function renderPlan(){
